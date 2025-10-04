@@ -1,6 +1,8 @@
 📚 Sistema de Gestão de Biblioteca
+
 📖 Sobre o Projeto
 Sistema completo de gerenciamento de biblioteca desenvolvido em Python com interface gráfica intuitiva. O projeto utiliza a arquitetura MVC (Model-View-Controller) para garantir código organizado, manutenível e escalável.
+
 🎯 Objetivos
 
 Facilitar o controle de empréstimos e devoluções de livros
@@ -9,7 +11,9 @@ Fornecer relatórios administrativos detalhados
 Proporcionar interface amigável para diferentes tipos de usuários
 
 🛠️ Tecnologias Utilizadas
+
 TecnologiaFinalidadePython 3Linguagem de programação principalTkinterBiblioteca para interface gráficaSQLiteSistema de banco de dados embutidoArquitetura MVCPadrão de organização do código
+
 📁 Estrutura do Projeto
 O sistema está organizado seguindo o padrão MVC:
 
@@ -18,6 +22,7 @@ View: Interface gráfica e interação com o usuário
 Controller: Lógica de negócio e validações
 
 🚀 Como Executar
+
 Pré-requisitos
 
 Python 3.x instalado no sistema
@@ -39,9 +44,13 @@ Senha: 123
 Permissões:
 
 ➕ Cadastrar novos livros no acervo
+
 👤 Cadastrar estudantes no sistema
+
 📤 Registrar empréstimos de livros
+
 📥 Registrar devoluções
+
 📊 Gerar relatórios gerenciais completos
 
 🎓 Estudante
@@ -61,32 +70,43 @@ Permissões:
 Gestão de Acervo
 
 ✅ Cadastro completo de livros (título, autor, ISBN, ano, quantidade)
+
 ✅ Controle de disponibilidade em tempo real
+
 ✅ Atualização automática do estoque
 
 Gestão de Estudantes
 
 ✅ Cadastro com matrícula, nome e curso
+
 ✅ Histórico de empréstimos
+
 ✅ Controle de limites (máximo 3 livros)
 
 Sistema de Empréstimos
 
 ✅ Registro de data de empréstimo
+
 ✅ Prazo de devolução automático
+
 ✅ Limite de 3 livros por estudante
+
 ✅ Validação de disponibilidade
 
 Sistema de Devoluções
 
 ✅ Registro de data de devolução
+
 ✅ Detecção automática de atrasos
+
 ✅ Atualização do estoque
 
 Relatórios Administrativos
 
 📊 Lista de empréstimos ativos
+
 ⏰ Estudantes com devoluções em atraso
+
 📈 Estatísticas do acervo
 
 💾 Dados Pré-cadastrados
@@ -116,6 +136,7 @@ Apenas administradores podem cadastrar livros e estudantes
 O estoque é atualizado automaticamente em cada operação
 
 🤝 Contribuições
+
 Este projeto foi desenvolvido como trabalho acadêmico. Sugestões e melhorias são bem-vindas!
 📄 Licença
 Projeto desenvolvido para fins educacionais.
