@@ -1,0 +1,34 @@
+-- Script de criação do banco de dados da Biblioteca
+
+-- Criação do banco: biblioteca.db
+sqlite3 biblioteca.db
+
+-- Criação da tabela de usuários
+CREATE TABLE IF NOT EXISTS usuarios (
+    matricula TEXT PRIMARY KEY,
+    nome TEXT NOT NULL,
+    curso TEXT NOT NULL
+);
+
+-- Criação da tabela de livros
+CREATE TABLE IF NOT EXISTS livros (
+    isbn TEXT PRIMARY KEY,
+    titulo TEXT NOT NULL,
+    autor TEXT NOT NULL,
+    ano_publicacao INTEGER NOT NULL,
+    quantidade_disponivel INTEGER NOT NULL
+);
+
+-- Criação da tabela de empréstimos
+CREATE TABLE IF NOT EXISTS emprestimos (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    usuario_id TEXT NOT NULL,
+    livro_id TEXT NOT NULL,
+    data_emprestimo TEXT NOT NULL,
+    data_prevista TEXT NOT NULL,
+    data_devolucao TEXT,
+    status TEXT NOT NULL CHECK (status IN ('ativo', 'devolvido', 'atrasado')),
+
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(matricula),
+    FOREIGN KEY (livro_id) REFERENCES livros(isbn)
+);
